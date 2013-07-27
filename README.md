@@ -13,13 +13,13 @@
 ## 实战
 
 1. 新建一个工程UnwindSegue
-2. 新建一个导航控制器，三个子视图控制器(红－>绿使用push segue; 绿->蓝使用代码弹出模态视图控制器)![storyboard结构](images/unwind_segue.png)
+2. 新建一个导航控制器，三个子视图控制器(红－>绿使用push segue; 绿->蓝使用代码弹出模态视图控制器)![storyboard结构](https://raw.github.com/cythb/UnwindSegue/master/images/unwind_segue.png)
 3. 分别建立RedViewController, GreenViewController, BlueViewController
 4. 在storyboard中设置好视图控制器的具体类;并给BlueViewController设置Storyboard ID为BlueViewController
 5. 在GreenViewController.m中拖出onModalBtnClicked:的IBAction
 6. 在onModalBtnClicked:实现弹出BlueViewController的代码
 7. 在RedViewController中实现- (IBAction)unwindSegue:(UIStoryboardSegue *)sender;
-8. 在BlueViewCOntroller中选中按钮，按住control拖动到底部的EXIT上，松开鼠标，选中unwindSegue: ![unwind action选择](images/unwind_action_sel.png)
+8. 在BlueViewCOntroller中选中按钮，按住control拖动到底部的EXIT上，松开鼠标，选中unwindSegue: ![unwind action选择](https://raw.github.com/cythb/UnwindSegue/master/images/unwind_action_sel.png)
 9. 运行程序看一下吧。
 
 
